@@ -20,6 +20,16 @@ export default function CreateAccount() {
     });
   };
 
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      setHaveUser(true);
+    }
+  });
+
+  if (haveUser) {
+    redirect("/home");
+  }
+
   return (
     <div className="sign-up-container">
       <h1>BrainBuilders</h1>
