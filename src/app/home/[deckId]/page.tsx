@@ -10,7 +10,7 @@ import { getDocs, collection } from "firebase/firestore";
  *
  * @param[in] params The parameters passed from the url
  */
-export default function DeckPage({ params }) {
+export default function DeckPage({ params }: any) {
   const deckId = params.deckId;
   const [flashcardList, setFlashcardList] = useState([]);
   const flashcardListRef = collection(db, "user-id", deckId, "flashcards");

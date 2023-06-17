@@ -12,7 +12,7 @@ import Typography from "@mui/material/Typography";
  *
  * @param[in] flashcard A dictionary containing information about a flashcard
  */
-export default function Flashcard({ flashcard }) {
+export default function Flashcard({ flashcard }: any) {
   return (
     <Card sx={{ maxWidth: 245 }}>
       <CardContent>

@@ -12,7 +12,7 @@ import Typography from "@mui/material/Typography";
  *
  * @param[in] deckId The name of the deck
  */
-export default function DeckCard({ deckId }) {
+export default function DeckCard({ deckId }: { deckId: string | null }) {
   const editLink = "/home/" + deckId;
   const reviewLink = "/home/" + deckId + "/review";
   console.log(editLink);
