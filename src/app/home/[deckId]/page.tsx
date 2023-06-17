@@ -12,7 +12,7 @@ import { getDocs, collection } from "firebase/firestore";
  */
 export default function DeckPage({ params }: any) {
   const deckId = params.deckId;
-  const [flashcardList, setFlashcardList] = useState([]);
+  const [flashcardList, setFlashcardList] = useState<{}[]>([]);
   const flashcardListRef = collection(db, "user-id", deckId, "flashcards");
 
   useEffect(() => {
