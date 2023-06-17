@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { getDocs, collection } from "firebase/firestore";
 
 export default function DeckList() {
-  const [deckList, setDeckList] = useState<{}[]>([]);
+  const [deckList, setDeckList] = useState<{ id: string }[]>([]);
 
   const deckListRef = collection(db, "user-id"); // A reference to the collection in firebase
 
